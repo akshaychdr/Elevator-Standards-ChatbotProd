@@ -53,7 +53,7 @@ export default async function handler(
     });
 
     //console.log('response', response);
-    console.log('sourceDocs:', response.sourceDocuments);
+    //console.log('sourceDocs:', response.sourceDocuments);
     const modifiedSourceDocs = response.sourceDocuments.map((doc: { pageContent: string; metadata: { pdf_numpages: any; source: string; }; }) => {
       const formattedPageContent = doc.pageContent
         .split('\n') // Split content by newlines
